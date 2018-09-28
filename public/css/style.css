@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+main {
+  height: 68vh;
+}
+.indicator-item{
+    background-color: #0d47a1 !important;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.indicator-item .active {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    background-color: #ffff99 !important;
+}
+.box {  
+  -webkit-box-shadow: inset 0px 6px 32px 6px rgba(0,0,0,0.75) !important;
+  -moz-box-shadow: inset 0px 6px 32px 6px rgba(0,0,0,0.75) !important;
+  box-shadow: inset 0px 6px 32px 6px rgba(0,0,0,0.75) !important;
+}
+.footbox{
+  -webkit-box-shadow: inset 0px 24px 128px 24px rgba(0,0,0,0.75) !important;
+  -moz-box-shadow: inset 0px 24px 128px 24px rgba(0,0,0,0.75) !important;
+  box-shadow: inset 0px 24px 128px 24px rgba(0,0,0,0.75) !important;
+}
+.flex{
+  display: flex;
+}
+.round {
+  padding: 10px;
+  border-radius: 30px;
+}
+.resize{
+  height: 75%;
+  width: 75%;
+}
+.input-field{
+    color: #000;
+}
+.input-field label:focus {
+  color: #0d47a1 !important;
+}
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #0d47a1 !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #1b5e20 !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #b71c1c !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field .prefix.active {
+  color: #0d47a1;
+}
+.input-field input[type=email]:focus{
+  border-bottom: 1px solid #0d47a1 !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=email].valid {
+  border-bottom: 1px solid #1b5e20 !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=email].invalid {
+  border-bottom: 1px solid #b71c1c !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field textarea:focus{
+  border: 1px solid #0d47a1 !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.page-footer{
+  background-color: #0d47a1 !important;
+}
+.carousel{
+  height: 100% !important;
+  width: 100%;
+}

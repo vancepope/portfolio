@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vancepope/portfolio.git"
+  },
+  "author": "Vance Pope <vancepope@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vancepope/portfolio/issues"
+  },
+  "homepage": "https://github.com/vancepope/portfolio#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "twilio": "^3.20.0"
+  }
+}
