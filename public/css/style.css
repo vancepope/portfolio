@@ -2,19 +2,26 @@ body {
   display: flex;
   height: 100vh;
   flex-direction: column;
+  background: url(../img/background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 main {
   height: 68vh;
 }
+.inline {
+  display: inline;
+  position: relative;
+}
 .indicator-item{
-    background-color: #0d47a1 !important;
+    background-color: #000000 !important;
     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
 }
 .indicator-item .active {
     width: 48px;
     height: 48px;
     margin: 10px;
-    background-color: #ffff99 !important;
+    background-color: #d6d6d6!important;
 }
 .box {  
   -webkit-box-shadow: inset 0px 6px 32px 6px rgba(0,0,0,0.75) !important;
@@ -78,7 +85,10 @@ main {
   box-shadow: 0 1px 0 0 #000;
 }
 .page-footer{
-  background-color: #0d47a1 !important;
+  background-color: #000000 !important;
+}
+.page-header {
+  background-color: #000000 !important;
 }
 .carousel{
   height: 100% !important;
