@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
     }
     res.render('index', data);
 });
+
 app.get('/about', (req, res) => {
     res.render('about');
 });
@@ -58,7 +59,7 @@ app.post('/thanks', (req, res) => {
 // Catch and handle everything else
 app.get('*', function (req, res) {
   res.send('Whoops, page not found 404').status(404);
-})
+});
 app.listen(process.env.PORT || 8080, () => {
     console.log('listening at http://localhost:8080');
 });
