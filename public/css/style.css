@@ -28,6 +28,12 @@ main {
   -moz-box-shadow: inset 0px 6px 32px 6px rgba(0,0,0,0.75) !important;
   box-shadow: inset 0px 6px 32px 6px rgba(0,0,0,0.75) !important;
 }
+.wrapped {
+  width: 50%;
+}
+.wrapper {
+  margin-bottom: -50px;
+}
 .footbox{
   -webkit-box-shadow: inset 0px 24px 128px 24px rgba(0,0,0,0.75) !important;
   -moz-box-shadow: inset 0px 24px 128px 24px rgba(0,0,0,0.75) !important;
@@ -35,6 +41,10 @@ main {
 }
 .flex{
   display: flex;
+}
+.grid img {
+  width: 100px;
+  height: 100px;
 }
 .round {
   padding: 10px;
