@@ -19,6 +19,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "bulma": "^0.7.2",
+    "bulma-carousel": "^3.0.0",
+    "bulma-extensions": "^3.0.0",
     "circleci": "^0.3.3",
     "dotenv": "^6.0.0",
     "ejs": "^2.6.1",

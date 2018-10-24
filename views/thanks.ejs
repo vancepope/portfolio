@@ -1,53 +1,88 @@
 <html>
   <head>
     <title>Vance Thanks You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+      <!-- Bulma Version 0.7.2-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/landing.css">
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper page-header box">
-        <a href="#" class="brand-logo">Vance Pope</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact Me</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div class="container box">
-        <div>
-          Thank you <%= userInfo.firstName %> <%= userInfo.lastName %>.
+   
+  <main>
+    <section class="hero is-info is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="/index">
+                                    <span class="icon">
+                                        <i class="fa fa-home"></i>
+                                    </span>
+                                    <span>Home</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="resume/VPope-Resume.pdf" target="_blank">
+                                    <span class="icon">
+                                        <i class="fas fa-file"></i>
+                                    </span>
+                                    <span>Resume</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="https://www.github.com/vancepope" target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Github</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="https://www.linkedin.com/in/vance-pope-20112b116" target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </span>
+                                    <span>Linked In</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="https://www.codewars.com/users/vancepope" target="_blank">
+                                    <span class="icon">
+                                        <i class="fa fa-code"></i>
+                                    </span>
+                                    <span>Code Wars</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-    </main>
-    <div class='footer'>
-      <footer class="page-footer footbox wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Vance's Portfolio</h5>
-                <p class="grey-text text-lighten-4">Programming is a game of looking forward to your next wall.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://www.github.com/vancepope" target="_blank"><i class="fab fa-github-square"></i> Github</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/vance-pope-20112b116"><i class="fab fa-linkedin" target="_blank"></i> Linked In</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.codewars.com/users/vancepope" target="_blank"><i class="fas fa-code"></i> Code Wars</a></li>
-                </ul>
-              </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-6 is-offset-3">
+                    <h1 class="title">Thank you <%= userInfo.firstName %> <%= userInfo.lastName %>. Have a great day!</h1>
+                    <h2 class="subtitle">I will be in touch with you very shortly.</h2>
+                </div>
             </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2018 Vance Pope Portfolio
-            </div>
-          </div>
-      </footer>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        </div>
+  </section>
+</main>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const dotenv = require('dotenv').config();
 const twilio = require('twilio');
+const bulmaCarousel = require('bulma-carousel');
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
@@ -23,19 +24,11 @@ app.get('/', (req, res) => {
             lastName: 'Pope'
         }
     }
-    res.render('index', data);
+    res.render('landing', data);
 });
-
-app.get('/about', (req, res) => {
-    res.render('about');
+app.get('/index', (req, res) => {
+  res.render('index');
 });
-app.get('/contact', (req, res) => {
-  res.render('contact');
-});
-app.get('/projects', (req, res) => {
-  res.render('projects');
-});
-
 app.post('/thanks', (req, res) => {
   const accountSid = 'AC4a06f1284f8f890395cfaa4edc5d8a96';
   const authToken = '80fc02a30a9e0fab17c1744c0b9e2504';

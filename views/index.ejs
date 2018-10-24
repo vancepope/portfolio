@@ -1,58 +1,161 @@
 <html>
   <head>
-    <title> Vance's Portfolio </title>
+    <title>Vance Pope's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="bulma-carousel/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper page-header box">
-        <a href="#" class="brand-logo">Vance Pope</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact Me</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-    <div class='container'>
-      <div class="row">
-        <br /><br /><br /><br /><br />
-       <ul class="col s4 offset-s4">
-         <li class="inline"><a class="black btn" href="/about">About</a></li>
-         <li class="inline"><a class="black btn" href="/projects">Projects</a></li>
-         <li class="inline"><a class="black btn" href="/contact">Contact</a></li>
-       </ul>
+  <nav class="navbar fixed" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/index">
+      <img src="img/head.png">
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active'); document.querySelector('.navbar-burger').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/index">Home</a>
+      <a class="navbar-item" href="#aboutMe">About</a>
+      <a class="navbar-item" href="#projects-carousel">Projects</a>
+      <a class="navbar-item" href="#contact">Contact</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="resume/VPope-Resume.pdf" target="_blank">Resume</a>
+          <hr class="navbar-divider">
+            <a class="navbar-item" href="https://www.github.com/vancepope" target="_blank"><i class="fab fa-github-square"></i> Github</a>
+            <a class="navbar-item" href="https://www.linkedin.com/in/vance-pope-20112b116"><i class="fab fa-linkedin" target="_blank"></i> Linked In</a>
+            <a class="navbar-item" href="https://www.codewars.com/users/vancepope" target="_blank"><i class="fas fa-code"></i> Code Wars</a>
+        </div>
       </div>
     </div>
-    </main>
-    <div class='footer'>
-      <footer class="page-footer footbox wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Vance's Portfolio</h5>
-                <p class="grey-text text-lighten-4">Programming is a game of looking forward to your next wall.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://www.github.com/vancepope" target="_blank"><i class="fab fa-github-square"></i> Github</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/vance-pope-20112b116"><i class="fab fa-linkedin" target="_blank"></i> Linked In</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.codewars.com/users/vancepope" target="_blank"><i class="fas fa-code"></i> Code Wars</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2018 Vance Pope Portfolio
-            </div>
-          </div>
-      </footer>
+    <div class="navbar-end">
+    </div>
   </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</nav>
+<main>
+    <section id="aboutMe" class="section has-text-centered">
+      <img src="img/head.png" alt="Vance Pope">
+       <h1 class="title">Software Developer</h1>
+       <p class="container">My curiosity to start programming started way back in middle school where I would spend hours trying to make websites on Geocities using HTML and CSS. After seperating from the military, I shortly decided to pursue programming as a career. I have done projects in Java, C#, HTML, CSS, JavaScript, Android Programming, Ionic 2, and ReactJs. For a while, I considered C# to be my favorite language to program in because C# made it really easy to encapsulate my variables into one method that does both, setting and getting, while in other languages like Java, one would have to create two seperate methods to handle that situation. Now after attending Origin Code Academy, I would have to say JavaScript is now my favorite because of its versatility. It can be used in various ways whether it be for front-end (ReactJs or Angular) or for back-end (ExpressJs).</p>
+    </section>
+    <section id="projects-carousel" class="section container">
+      <div class='carousel carousel-animated carousel-animate-fade container'>
+          <h1 class="title">Projects</h1>
+          <br />
+          <div class='carousel-container'>
+            <div class='carousel-item has-background is-active'>
+              <img class="is-background" src="img/changecalculator.png" height="310" width="640" alt="Change Calculator" />
+              <h3 class="title">Change Calculator &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-changecalculator.herokuapp.com/" target="_blank">Run Application</a></h3>
+            </div>
+            <div class='carousel-item has-background'>
+              <img class="is-background is-2by1" src="img/tictactoe.png" height="310" width="640" alt="Tic Tac Toe" />
+              <div class="title">Tic Tac Toe &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-tictactoe.herokuapp.com/" target="_blank">Run Application</a></div>
+            </div>
+            <div class='carousel-item has-background'>
+              <img class="is-background is-2by1" src="img/mortgage.png" height="310" width="640" alt="Mortgage Calculator" />
+              <div class="title">Mortgage Calculator &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-mortgage-calculator.herokuapp.com" target="_blank">Run Application</a></div>
+            </div>
+            <div class='carousel-item has-background'>
+              <img class="is-background is-2by1" src="img/vstda.png" height="310" width="640" alt="VSTDA" />
+              <div class="title">Very Simple To Do App &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-vstda.herokuapp.com" target="_blank">Run Application</a></div>
+            </div>
+            <div class='carousel-item has-background '>
+              <img class="is-background is-2by1" src="img/topspots.png" alt="Topspots" height="310" width="640" />
+              <div class="title">San Diego Topspots in React &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-topspots.herokuapp.com" target="_blank">Run Application</a></div>
+            </div>
+            <div class='carousel-item has-background'>
+              <img class="is-background is-2by1" src="img/budgettracker.png" height="310" width="640" alt="BUDGET TRACKER" />
+              <div class="title">Budget Tracker built in React w/ Redux &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-budget-tracker.herokuapp.com/" target="_blank">Run Application</a></div>
+            </div>
+            <div class='carousel-item has-background'>
+              <img class="is-background is-2by1" src="img/weatherapp.png" height="310" width="640" alt="WEATHER APP" />
+              <div class="title">A weather app built in React utilizing Redux and Open Weather API &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-weatherapp.herokuapp.com" target="_blank">Run Application</a></div>
+            </div>
+            <div class='carousel-item has-background'>
+              <img class="is-background is-2by1" src="img/moviefinder.png" height="310" width="640" alt="MOVIE FINDER" />
+              <div class="title">Movie Finder in React w/ Redux and OMDB API &nbsp<a class="btn-floating halfway-fab waves-effect waves-light red" href="https://vrp-movie-finder.herokuapp.com" target="_blank">Run Application</a></div>
+            </div>
+          </div>
+              <div class="carousel-navigation is-info">
+                <div class="carousel-nav-left">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="carousel-nav-right">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+              </div>
+      </div> <br /> <br /> <br />
+    </section>
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="column is-center">
+            <h1 class="title has-text-centered">Contact Me</h1>
+          <form class="is-half" action='/thanks' method='POST'>
+            <div class="field input-field">
+              <label class="label">First Name</label>
+              <div class="control">
+                <input placeholder="John" id="firstName" name="firstName" class="input" type="text" required>
+              </div>
+            </div>
+            <div class="field input-field">
+              <label class="label">Last Name</label>
+              <div class="control">
+                <input placeholder="John" id="lastName" name="lastName" class="input" type="text" required>
+              </div>
+            </div>
+            <div class="field input-field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" placeholder="johndoe@example.com" id="email" name="email" type="email" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+              </div>
+            </div>
+            <div class="field input-field">
+              <label class="label">Company</label>
+              <div class="control">
+                <input placeholder="Your Company" id="company" name="company" class="input" type="text" required>
+              </div>
+            </div>
+            <div class="field input-field">
+              <label class="label">Subject</label>
+                <div class="control">
+                  <input placeholder="subject" id="subject" name="subject" class="input" type="text" required>
+                </div>
+            </div>
+            <div class="field input-field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea id="message" name="message" class="textarea" placeholder="Textarea" required></textarea>
+              </div>
+            </div>
+            <div class="field is-grouped is-center">
+              <div class="control">
+                <button class="button is-link has-text-centered" type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+</main>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script type="text/javascript" src="/node_modules/bulma-extensions/bulma-carousel/dist/bulma-carousel.min.js"></script>
+  <script src="bulma-carousel/dist/js/bulma-carousel.js"></script>
+  <script src="js/carousel.js"></script>
   </body>
 </html>

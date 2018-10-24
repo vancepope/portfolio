@@ -1,13 +1,91 @@
 body {
   display: flex;
-  height: 100vh;
   flex-direction: column;
-  background: url(../img/background.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 main {
-  height: 68vh;
+  background-color: #fff;
+
+}
+#aboutMe {
+  background-color: #808080;
+
+}
+#aboutMe p {
+  color: #fff;
+}
+#contact {
+  background-color: #808080;
+}
+.background {
+  background: #000;
+  background-position: center;
+  -webkit-clip-path: polygon(42% 29%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(42% 29%, 100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+#fixed {
+  position: fixed;
+}
+.shape-top{
+  position:absolute;
+  top:0;
+  left:0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 80% 0, 35% 50%, 0 12%);
+  clip-path: polygon(0 0, 80% 0, 35% 50%, 0 12%);
+}
+.is-center {
+  margin: auto;
+  width: 50%;
+}
+.shape-left{
+  float:left;
+  width: 50%;
+	height: 75%;
+  background: #808080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -100px 0;
+  -webkit-clip-path: polygon(94% 0, 100% 0, 0 100%, 0 94%);
+  clip-path: polygon(94% 0, 100% 0, 0 100%, 0 94%);
+  -webkit-shape-outside: polygon(94% 0, 100% 0, 0 100%, 0 94%);
+  shape-outside: polygon(94% 0, 100% 0, 0 100%, 0 94%);
+  shape-margin: .5em;
+  -webkit-shape-margin: .5em;
+}
+.element {
+  width: 45%;
+  height: 600px;
+  float: left;
+  background-image: url(../img/background.jpeg);
+  background-size: cover;
+  background-position: 100px 0;
+  background-repeat: no-repeat;
+  -webkit-clip-path: ellipse(90% 70% at 0% 50%);
+  clip-path: ellipse(90% 70% at 0% 50%);
+  -webkit-shape-outside: ellipse(90% 70% at 0% 50%);
+  shape-outside: ellipse(90% 70% at 0% 50%);
+  -webkit-shape-margin: 2em;
+  shape-margin: 2em;
+}
+.son {
+  width: 45%;
+  height: 600px;
+  float: right;
+  background-image: url(../img/fathernson.jpg);
+  background-size: cover;
+  background-position: 100px 0;
+  background-repeat: no-repeat;
+  -webkit-clip-path: ellipse(90% 70% at 0% 50%);
+  clip-path: ellipse(90% 70% at 0% 50%);
+  -webkit-shape-outside: ellipse(90% 70% at 0% 50%);
+  shape-outside: ellipse(90% 70% at 0% 50%);
+  -webkit-shape-margin: .5em;
+  shape-margin: .5em;
 }
 .inline {
   display: inline;
@@ -29,7 +107,7 @@ main {
   box-shadow: inset 0px 6px 32px 6px rgba(0,0,0,0.75) !important;
 }
 .wrapped {
-  width: 50%;
+  width: 100%;
 }
 .wrapper {
   margin-bottom: -50px;
@@ -64,30 +142,30 @@ main {
   color: #000;
 }
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid #0d47a1 !important;
+  border: 1px solid #0d47a1 !important;
   box-shadow: 0 1px 0 0 #000;
 }
 .input-field input[type=text].valid {
-  border-bottom: 1px solid #1b5e20 !important;
+  border: 1px solid #1b5e20 !important;
   box-shadow: 0 1px 0 0 #000;
 }
 .input-field input[type=text].invalid {
-  border-bottom: 1px solid #b71c1c !important;
+  border: 1px solid #b71c1c !important;
   box-shadow: 0 1px 0 0 #000;
 }
 .input-field .prefix.active {
   color: #0d47a1;
 }
 .input-field input[type=email]:focus{
-  border-bottom: 1px solid #0d47a1 !important;
+  border: 1px solid #0d47a1 !important;
   box-shadow: 0 1px 0 0 #000;
 }
 .input-field input[type=email].valid {
-  border-bottom: 1px solid #1b5e20 !important;
+  border: 1px solid #1b5e20 !important;
   box-shadow: 0 1px 0 0 #000;
 }
 .input-field input[type=email].invalid {
-  border-bottom: 1px solid #b71c1c !important;
+  border: 1px solid #b71c1c !important;
   box-shadow: 0 1px 0 0 #000;
 }
 .input-field textarea:focus{
@@ -100,7 +178,6 @@ main {
 .page-header {
   background-color: #000000 !important;
 }
-.carousel{
-  height: 100% !important;
-  width: 100%;
+#aboutMe img{
+  border-radius: 50%;
 }

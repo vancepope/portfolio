@@ -1,10 +1,3 @@
 $(document).ready(function(){
-  $('.carousel').carousel(
-  {
-    dist: 0,
-    padding: 0,
-    fullWidth: true,
-    indicators: true,
-  }
-  );
+  var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
 });
