@@ -1,11 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const forceSsl = require('force-ssl-heroku');
 const app = express();
 const dotenv = require('dotenv').config();
 const twilio = require('twilio');
 const bulmaCarousel = require('bulma-carousel');
 
+app.use(forceSsl);
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
