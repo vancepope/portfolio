@@ -5,7 +5,6 @@ const forceSsl = require('force-ssl-heroku');
 const app = express();
 const dotenv = require('dotenv').config();
 const twilio = require('twilio');
-const bulmaCarousel = require('bulma-carousel');
 
 app.use(forceSsl);
 app.use(morgan('dev'));
@@ -35,7 +34,7 @@ app.post('/thanks', (req, res) => {
   const accountSid = 'AC4a06f1284f8f890395cfaa4edc5d8a96';
   const authToken = '80fc02a30a9e0fab17c1744c0b9e2504';
 
-  const client = new twilio(accountSid, authToken);
+  const client = new twilio(process.env.TWILIO_ACCOUNT_ID, process.env.__dirnam.TWILIO_AUTH_TOKEM);
   const userInfo = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
